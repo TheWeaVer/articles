@@ -1,0 +1,1 @@
+#### Original: [Java Application Optimization on Kubernetes on the Example of a Spring Boot Microservice](https://faun.pub/java-application-optimization-on-kubernetes-on-the-example-of-a-spring-boot-microservice-cf3737a2219c)
