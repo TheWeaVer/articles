@@ -127,6 +127,6 @@ Refresh token은 bearer token입니다. 따라서, 인가 서버는 누가 적�
 하지만, refresh token은 access token의 수명에 의해 제한됩니다. 이는 우리가 refresh token을 브라우저 개인정보보호 툴과 함께 사용할 수 있음을 의미하고 유저 경험을 경감하지 않은 채로 지속적은 접근 방법을 제공할 수 있습니다.
 
 ## You can store Refresh Token in local storage
-Refresh token을 page refresh가 tab에 상관이 없는 persistent storage에 저장할 수 있습니다. 하지만 이는 XSS 공격이 포함된 JPA의 JS코드에 의해 어뷰저가 탈취하고 사용할 수 있습니다. XSS 공격은 SPA내의 코드 혹은 Bootstrap이나 Google Analytics 등 서드파티의 코드에 포함되어있을 수 있습니다.
+Refresh token을 page refresh나 tab에 영향받지 않는 persistent storage에 저장할 수 있습니다. 하지만 이는 XSS 공격이 포함된 JPA의 JS코드에 의해 어뷰저가 탈취하고 사용할 수 있습니다. XSS 공격은 SPA내의 코드 혹은 Bootstrap이나 Google Analytics 등 서드파티의 코드에 포함되어있을 수 있습니다.
 
-하지만, refresh token rotation은 refresh token이 긴 수명을 갖고 있다고 하더라도, access token과 동일한 수명을 갖게 하기 때문에, 이 공격으로부터 발생하는 문제점을 줄일 수 있으며, 이는 refresh token을 local storage에 저장할 수 있게 합니다.
+하지만, refresh token rotation은 refresh token이 긴 수명을 갖고 있다고 하더라도 access token과 동일한 수준의 수명을 갖게 하기 때문에, 이 공격으로부터 발생하는 문제점을 줄일 수 있으며, 이는 refresh token을 local storage에 저장할 수 있게 합니다.
