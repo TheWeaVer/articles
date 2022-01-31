@@ -39,7 +39,7 @@ OAuth 2.0은 access token의 형식을 정의하지 않습니다. 예를 들어,
 } 
 ```
 
-여기서 중요한 점은 access token이 Bearer token이라는 점입니다. 이 token을 가지고 있다면, 사용할 수 있습니다. access token은 식별 인자로 활용하기 보다는 보호받는 리소스에 접근하기 위한 credential artifact로서 기능합니다. 어뷰저는 이론적으로 access token을 탈취하여 리소스에 접근 가능합니다.
+여기서 중요한 점은 access token이 Bearer token이라는 점입니다. 이 token을 가지고 있다면, 누구든지 사용할 수 있습니다. access token은 식별 인자로 활용하기 보다는 보호받는 리소스에 접근하기 위한 credential artifact로서 기능합니다. 어뷰저는 이론적으로 access token을 탈취하여 리소스에 접근 가능합니다.
 
 따라서, 어뷰저가 사용할 수 있게 된 access token의 위험을 최소화 하기 위한 보안 전략들이 중요해집니다. 한 가지 이 문제를 완화시켜줄 수 있는 방법은 짧은 수명을 갖는 access token을 발행하는 것입니다: 문자그대로 수시간내에서 수일내에 만료되는 토큰입니다.
 
